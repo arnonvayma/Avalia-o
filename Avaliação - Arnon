@@ -1,0 +1,15 @@
+# (20) Considerando a matriz abaixo, crie um laço for para calcular a média de uso de CPU por linha e imprima os resultados com 2 casas decimais.
+
+
+uso_cpu = [
+[20, 25, 40, 50, 45, 60, 55, 35, 70, 65],
+[30, 35, 50, 60, 40, 55, 60, 45, 50, 55],
+[15, 20, 30, 25, 35, 40, 45, 50, 55, 60],
+[10, 15, 25, 35, 45, 50, 55, 60, 65, 70],
+]
+for i in range(len(uso_cpu)):
+  soma = 0
+  for j in range(len(uso_cpu[i])):
+    soma += uso_cpu[i][j]
+  media =soma/len(uso_cpu[i])
+  print(f'A média de uso de CPU na linha{i+1} é {media: .2f}')
